@@ -1,0 +1,51 @@
+title: Hello World !
+description: My share to the open-source community :)
+author: Rahul Gaba
+github: https://github.com/rahulgaba16
+about: I am a JavaScript Developer. I have advance level experience in Front-end technologies and intermediate level experience in NodeJS programming.
+disqus_shortname: rgabs
+google_analytics: UA-80358007-1
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "https://facebook.com/rahulgaba16"
+    - icon: fa-envelope
+      link: "mailto:rahulgaba16@gmail.com?Subject=Hey%20there"
+    - icon: fa-twitter
+      link: "https://twitter.com/rahulgaba16"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/rahulgaba16"
+    - icon: fa-file-text
+      link: "https://drive.google.com/file/d/0B2k1O-6Q2FyXcXVwNTZvQTc1d00/view?usp=sharing"
+
+share:
+  twitter_username: rahulgaba16
+  # fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: Projects
+      url: /projects/
+    - text: Github
+      url: https://github.com/rahulgaba16
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://rahulgaba16.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
