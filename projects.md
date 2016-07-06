@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Projects
+title: Projects and Experiments
 permalink: /projects/
 ---
 
-Coming soon
+Here are the projects and experiments that I did in my free time.

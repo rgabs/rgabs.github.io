@@ -33,7 +33,7 @@ share:
 urls:
     - text: About Me
       url: /about/
-    - text: Projects
+    - text: Projects and Experiments
       url: /projects/
     - text: Github
       url: https://github.com/rahulgaba16

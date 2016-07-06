@@ -1,8 +1,22 @@
 [{
-  "slug": "Coming soon",
-  "name": "Coming Soon",
-  "image": "placeholder.jpg",
-  "url": "#",
-  "date": "Jan 2014",
-  "tags": ["Angular JS", "Node.JS"]
+  "slug": "Matrix Chart",
+  "name": "Matrix Chart",
+  "image": "matrix.png",
+  "url": "http://rahulgaba16.github.io/matrixChart/",
+  "date": "Jan 2016",
+  "tags": ["jQuery", "CSS"]
+}, {
+  "slug": "Searchable Select Dropdown",
+  "name": "Searchable Select Dropdown",
+  "image": "dropdown.png",
+  "url": "https://rahulgaba16.github.io/searchable-select-dropdown/",
+  "date": "June 2016",
+  "tags": ["VueJS", "NPM"]
+}, {
+  "slug": "noUISlider Directive",
+  "name": "noUISlider Directive",
+  "image": "nouislider.png",
+  "url": "https://rahulgaba16.github.io/2016/01/06/es6-based-angular-directive-for.html",
+  "date": "Jan 2016",
+  "tags": ["AngularJS", "ES6", "CSS"]
 }]
