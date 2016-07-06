@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a JavaScript Developer. I have advance level experience in Front-end technologies and intermediate level experience in NodeJS programming.
 
-email: rahulgaba16@gmail.com
+Email: [rahulgaba16@gmail.com](mailto:rahulgaba16@gmail.com?Subject=Hey there)
+
+Don't forget to hit star if you like my work :)

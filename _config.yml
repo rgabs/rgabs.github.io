@@ -1,9 +1,9 @@
-title: Hello World !
+title: Rahul Gaba
 description: My share to the open-source community :)
 author: Rahul Gaba
 github: https://github.com/rahulgaba16
 about: I am a JavaScript Developer. I have advanced level experience in Front-end technologies and intermediate level experience in NodeJS programming.
-disqus_shortname: rgabs
+disqus_shortname: rahulgaba
 google_analytics: UA-80358007-1
 
 enableTags: true
@@ -17,13 +17,13 @@ collections:
 social:
     - icon: fa-facebook
       link: "https://facebook.com/rahulgaba16"
-    - icon: fa-envelope
+    - icon: fa-envelope-square
       link: "mailto:rahulgaba16@gmail.com?Subject=Hey%20there"
     - icon: fa-twitter
       link: "https://twitter.com/rahulgaba16"
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/rahulgaba16"
-    - icon: fa-file-text
+    - icon: fa-paperclip
       link: "https://drive.google.com/file/d/0B2k1O-6Q2FyXcXVwNTZvQTc1d00/view?usp=sharing"
 
 share:
