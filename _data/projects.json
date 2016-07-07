@@ -1,10 +1,17 @@
 [{
+  "slug": "Line/Range(Analysis) Chart",
+  "name": "Line/Range(Analysis) Chart",
+  "image": "linerangechart.png",
+  "url": "https://rahulgaba16.github.io/lineRangeChart/",
+  "date": "July 2016",
+  "tags": ["jQuery", "CSS", "HTML"]
+}, {
   "slug": "Matrix Chart",
   "name": "Matrix Chart",
   "image": "matrix.png",
   "url": "http://rahulgaba16.github.io/matrixChart/",
   "date": "Jan 2016",
-  "tags": ["jQuery", "CSS"]
+  "tags": ["jQuery", "CSS", "HTML"]
 }, {
   "slug": "Searchable Select Dropdown",
   "name": "Searchable Select Dropdown",
