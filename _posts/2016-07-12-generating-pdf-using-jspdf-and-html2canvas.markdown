@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Printing the document from front end only using jsPDF, html2canvas"
+title:  "A complete guide to generate PDF via just the front-end"
 date:  2016-07-14 00:34:00
 categories: front-end
 ---
@@ -112,4 +112,10 @@ function startPrintProcess(canvasObj, fileName, callback) {
 ```
 <br/>
 
-#### That's all you need to print the perfect screenshot of your view from the front-end.
+#### That's all you need to print the perfect screenshot of your view(s) from the front-end.
+
+We can use it further to save multiple views on a single PDF file by saving the state of the PDF object and mutating the object in each view(using `pdf.addHTML` and `pdf.addPage` methods).
+
+Please leave comments below if you want to share anything or give feedback.
+
+CHEERS!
