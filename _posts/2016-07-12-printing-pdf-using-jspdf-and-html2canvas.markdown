@@ -1,18 +1,11 @@
 ---
 layout: post
 title:  "Printing the document from front end only using jsPDF, html2canvas"
-date:   2013-12-23 00:18:23
-categories: ruby
+date:  2016-07-14 00:34:00
+categories: front-end
 ---
 
-<!-- ----
-layout: post
-title: "Printing the document from front end only using jsPDF, html2canvas"
-date: 2016-07-12 00:34:00
-categories: "jsPDF, html2canvas, canvg, printing, browser, view"
----- -->
-
-##Why do I need this?
+### Why do I need this?
 As a front end developer, we all come across a problem statement where the client wants to get the screenshot of front-end views in a single PDF.
 
 Though we can print PDF by triggering browser's default print button functionality(similar to Ctrl+P) but that approach has some limitations, which are:
@@ -24,20 +17,21 @@ So if you think that you won't face the issues mentioned above, then you can go 
 
 And if you think that you might face these issues, then this blog is for you.
 
-##Initial Setup:
+### Initial Setup:
 We will be using jsPDF for printing PDFs from the Client side. I believe it is a great tool but unfortunately it doesn't have a good documentation. So I am going to share how I managed to take exact similar printout of my view using jsPDF.
 
 Here's the plugins that I used in my case with the versions. Please make sure to install the exact versions. Though if you want to do some experiment, please go ahead and try the new/beta versions and let me know if they work well:
-* `Canvg(v1.0.0)` plugin: To convert SVG elements to canvas(Use this only if your view contains SVG elements). jsPDF isn't very good with SVG elements.
-* `html2canvas(v0.5.0-beta4)`: To convert all our html view into a single canvas which will take care of maintaining the height and width of the view.
-* `jsPDF(v1.0.272)`: For creating a blank PDF and writing html/images to PDF. Note that in our case, we will be writing canvas objects to the pdf which is a beta feature og jsPDF library. But it worked like a charm in both of my projects.
 
-##The Real stuff:
+*  `Canvg(v1.0.0)` plugin: To convert SVG elements to canvas(Use this only if your view contains SVG elements). jsPDF isn't very good with SVG elements.
+*  `html2canvas(v0.5.0-beta4)`: To convert all our html view into a single canvas which will take care of maintaining the height and width of the view.
+*  `jsPDF(v1.0.272)`: For creating a blank PDF and writing html/images to PDF. Note that in our case, we will be writing canvas objects to the pdf which is a beta feature og jsPDF library. But it worked like a charm in both of my projects.
+
+### The Real stuff:
 Now, lets get started with some coding.
 
 Firstly, we would need to replace all the svgs in out body to canvas Object. You don't need this if you do not have any SVG elements on your webpage.
 
-```
+```javascript
 //replace all svgs with a temp canvas
 var replaceSVGwithCanvas = function(callback) {
   //find all svg elements in $container
@@ -60,9 +54,12 @@ var replaceSVGwithCanvas = function(callback) {
   callback(); //to be called after the process in finished
 };
 ```
-After our SVG elements are replaced, we will use `html2canvas` plugin to convert the HTML view to a single canvas object.
 
-```
+<br/>
+
+#### After our SVG elements are replaced, we will use `html2canvas` plugin to convert the HTML view to a single canvas object.
+
+```javascript
 replaceSVGwithCanvas(function onComplete() {
   html2canvas(document.getElementById('dom-to-print'), {
     onrendered: function(canvasObj) {
@@ -74,20 +71,23 @@ replaceSVGwithCanvas(function onComplete() {
   });
 });
 ```
+<br/>
 
-We will create a new jsPDF Object and configuration which will be passed while adding HTML.
+#### We will create a new jsPDF Object and configuration which will be passed while adding HTML.
 
-{% highlight javascript %}
+```javascript
 var pdf = new jsPDF('l', 'pt', 'a4'), // landscape/point(Unit)/A4(size)
 pdfConf = {
   pagesplit: false, //Adding page breaks manually using pdf.addPage();
   background: '#fff' //White Background.
 };
-{% endhighlight %}
-
-Lets start defining the `startPrintProcess` functionality. Note that to add a canvas object to the PDF, it should be present in the HTML DOM. So we will append the canvas object to the HTML DOM and remove it after adding it to the PDF.
-
 ```
+<br/>
+
+#### Lets start defining the `startPrintProcess` functionality. Note that to add a canvas object to the PDF, it should be present in the HTML DOM. So we will append the canvas object to the HTML DOM and remove it after adding it to the PDF.
+
+
+```javascript
 function startPrintProcess(canvasObj, fileName, callback) {
   var pdf = new jsPDF('l', 'pt', 'a4'),
     pdfConf = {
@@ -109,5 +109,6 @@ function startPrintProcess(canvasObj, fileName, callback) {
   });
 }
 ```
+<br/>
 
-That's all you need to print the perfect screenshot of your view from the front-end.
+#### That's all you need to print the perfect screenshot of your view from the front-end.
