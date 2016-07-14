@@ -9,6 +9,7 @@ categories: front-end
 As a front end developer, we all come across a problem statement where the client wants to get the screenshot of front-end views in a single PDF.
 
 Though we can print PDF by triggering browser's default print button functionality(similar to Ctrl+P) but that approach has some limitations, which are:
+
 * Styling issues: The browser is programmed to print only the necessary info(text) when we do (Ctrl+P). The browser ignores some css properties box shadow/background.
 * Working with SVG's: If you have a lot of charts on your page then it becomes a pain to write a separate [print specific CSS](https://css-tricks.com/css-tricks-finally-gets-a-print-stylesheet/).
 * If you want to print multiple views: You cannot print multiple views in a single pdf file. You will need do some hack in your front-end router to merge all the pages in a single route and then trigger the print button. I tried it in angularJS and it is not something which I would recommend to do.
