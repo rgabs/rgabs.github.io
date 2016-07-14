@@ -1,10 +1,16 @@
 ---
 layout: post
+title:  "Printing the document from front end only using jsPDF, html2canvas"
+date:   2013-12-23 00:18:23
+categories: ruby
+---
+
+<!-- ----
+layout: post
 title: "Printing the document from front end only using jsPDF, html2canvas"
 date: 2016-07-12 00:34:00
-author: Rahul Gaba
-tags: "jsPDF, html2canvas, canvg, printing, browser, view"
----
+categories: "jsPDF, html2canvas, canvg, printing, browser, view"
+---- -->
 
 ##Why do I need this?
 As a front end developer, we all come across a problem statement where the client wants to get the screenshot of front-end views in a single PDF.
@@ -58,8 +64,11 @@ After our SVG elements are replaced, we will use `html2canvas` plugin to convert
 
 ```
 replaceSVGwithCanvas(function onComplete() {
-  html2canvas(document.body, {
+  html2canvas(document.getElementById('dom-to-print'), {
     onrendered: function(canvasObj) {
+      startPrintProcess(canvasObj, 'printedPDF',function (){
+        alert('PDF saved');
+      });
       //save this object to the pdf
     }
   });
@@ -68,33 +77,37 @@ replaceSVGwithCanvas(function onComplete() {
 
 We will create a new jsPDF Object and configuration which will be passed while adding HTML.
 
-```
+{% highlight javascript %}
 var pdf = new jsPDF('l', 'pt', 'a4'), // landscape/point(Unit)/A4(size)
 pdfConf = {
   pagesplit: false, //Adding page breaks manually using pdf.addPage();
   background: '#fff' //White Background.
 };
+{% endhighlight %}
+
+Lets start defining the `startPrintProcess` functionality. Note that to add a canvas object to the PDF, it should be present in the HTML DOM. So we will append the canvas object to the HTML DOM and remove it after adding it to the PDF.
+
+```
+function startPrintProcess(canvasObj, fileName, callback) {
+  var pdf = new jsPDF('l', 'pt', 'a4'),
+    pdfConf = {
+      pagesplit: false,
+      background: '#fff'
+    };
+  document.body.appendChild(canvasObj); //appendChild is required for html to add page in pdf
+  pdf.addHTML(canvasObj, 0, 0, pdfConf, function() {
+    document.body.removeChild(canvasObj);
+    pdf.addPage();
+    html2canvas(document.getElementById('new-page-dom')).then(function(newCanvasDom) { //render the dom to be printed on the second page
+      document.body.appendChild(newCanvasDom);
+      pdf.addHTML(newCanvasDom, 20, 20, pdfConf, function() {
+        document.body.removeChild(newCanvasDom);
+        pdf.save(fileName + '.pdf');
+        callback();
+      });
+    });
+  });
+}
 ```
 
-<!-- function onBodyRender(canvasObj, defaultCompanyLabel, callback) {
-      var pdf = new jsPDF('l', 'pt', 'a4'),
-        pdfConf = {
-          pagesplit: false,
-          background: '#fff'
-        };
-      document.body.appendChild(canvasObj); //appendChild is required for html to add page in pdf
-      pdf.addHTML(canvasObj, 0, 0, pdfConf, function() {
-        document.body.removeChild(canvasObj);
-        pdf.addPage();
-        $('.right-container').show(); //show cards only for the second page
-        html2canvas(document.getElementsByClassName('right-container')[0]).then(function(cardsCanvas) { //render only thr cards block and add them to a new page
-          document.body.appendChild(cardsCanvas);
-          pdf.addHTML(cardsCanvas, 20, 20, pdfConf, function() {
-            document.body.removeChild(cardsCanvas);
-            pdf.save(defaultCompanyLabel + '.pdf');
-            $rootScope.showLoader = false;
-            callback();
-          });
-        });
-      });
-    } -->
+That's all you need to print the perfect screenshot of your view from the front-end.
