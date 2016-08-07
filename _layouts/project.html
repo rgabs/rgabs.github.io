@@ -18,7 +18,7 @@ layout: default
     {% assign p_array = p_array | push: p_slug_arr  %}
     {% endfor %}
 
-    <div class="projects">
+    <div class="projects clearfix">
     {% include project_tags.html %}
     {% for i in site.data.projects %}
     	<div class="project-item project-outer col-xs-12 col-md-4 col-sm-6" data-tags='{{ i.tags | jsonify | downcase }}'>
