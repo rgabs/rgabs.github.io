@@ -74,8 +74,9 @@ iPhoneInstallOverlay.hideOverlay();
 ### Screenshots and Demo
 Working demo of the plugin: [http://rahulgaba.com/iPhone-install-overlay](http://rahulgaba.com/iPhone-install-overlay)
 
-![Demo](/static/img/iphone_overlay/dummy_overlay.gif "App overlay"){:class="post-img"}
-![Demo](/static/img/iphone_overlay/dummy_app.png "Installed app"){:class="post-img"}
+![App overlay](/static/img/iphone_overlay/dummy_overlay.gif "App overlay"){:class="post-img"}
+![Installed app](/static/img/iphone_overlay/dummy_app.png "Installed app"){:class="post-img"}
+![Full GIF](/static/img/iphone_overlay/app.gif "Full GIF"){:class="post-img"}
 {: style="text-align: center;"}
 <br/>
 
