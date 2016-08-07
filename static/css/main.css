@@ -17,6 +17,9 @@ hr {
   border-top: 1px solid #F7F1F1;
   border-bottom: 1px solid #fff;
 }
+.post-img {
+  height: 450px;
+}
 
 /**
  * Font and link declarations
