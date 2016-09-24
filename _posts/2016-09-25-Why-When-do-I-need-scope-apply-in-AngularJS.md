@@ -21,7 +21,7 @@ Code Explanation:
 
 ```html
 <div ng-controller="MyCtrl">
-  Hello, {{name}}!
+  Hello, {% raw  %}{{name}}{% endraw %}!
 </div>
 ```
 
