@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why/When do I need $scope.$apply() in AngularJS"
+title:  "Why-When do I need $scope.$apply() in AngularJS"
 date:  2016-09-25 1:15:00
 categories: front-end
 ---
@@ -47,4 +47,5 @@ function MyCtrl($scope, myService) {
 ### Important things to take care when using $scope.$apply()
 * Make sure that the there is no digest cycle is running when you manually trigger it or else you might get an error saying `Error: $digest already in progress`. Refer to this blog for solving this issue (http://www.bennadel.com/blog/2605-scope-evalasync-vs-timeout-in-angularjs.htm)
 * Prefer using Angular service wrappers instead of using native JS functions. (In this case, use $q service by Angular instead of native Promise API)
+* Try to use directives whenever possible as $scope.$apply() will just update the view associated with that specific directive.
 <!-- <script async src="//jsfiddle.net/rgabs/paxf1Lmn/1/embed/"></script> -->
