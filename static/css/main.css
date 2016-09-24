@@ -10,6 +10,7 @@ body {
   color: #666;
   font-weight: 300;
 }
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -17,9 +18,11 @@ hr {
   border-top: 1px solid #F7F1F1;
   border-bottom: 1px solid #fff;
 }
+
 .post-img {
   height: 450px;
 }
+
 
 /**
  * Font and link declarations
@@ -30,30 +33,34 @@ span.time, span.categories {
   margin-bottom: 5px;
   font-size: 11px;
 }
+
 h1 {
   font-weight: normal;
   color: #696969;
   margin-bottom: 10px;
   font-size: 25px;
 }
+
 h2 {
   font-weight: normal;
   margin-bottom: 10px;
   color: #666666;
 }
+
 h3 {
   font-weight: normal;
   margin-bottom: 10px;
   color: #666666;
 }
+
 a, a:link, a:active {
   text-decoration: none;
-  color: #8C8C8C;
 }
+
 a:hover {
-  color: #B3B3B3;
   text-decoration: underline;
 }
+
 
 /**
  * /////////////////
@@ -66,6 +73,7 @@ div#container {
   margin: auto;
 }
 
+
 /**
  * //////////////////////////////////
  * Right aka content column formatting
@@ -76,11 +84,13 @@ div.right {
   width: 500px;
   float: left;
 }
+
 div.content {
   border-top: 1px solid #E6E6E6;
   margin-top: 5px;
   padding-top: 5px;
 }
+
 div.content pre {
   background: #333333;
   padding: 10px;
@@ -90,14 +100,17 @@ div.content pre {
   font-size: 12px;
   border: none;
 }
+
 div.content .highlight {
   background: #333333;
   overflow: auto;
 }
+
 div.content .highlight code {
   min-width: 610px;
   display: block;
 }
+
 footer {
   border-top: 1px solid #F7F1F1;
   width: 100%;
@@ -110,26 +123,32 @@ footer {
   bottom: 0;
   padding-bottom: 10px;
 }
+
 footer div#github {
   text-align: right;
 }
+
 div.right h1 {
   margin-bottom: -2px;
 }
+
 div.right ul {
   list-style: none;
   margin-left: 0;
   padding: 0;
 }
+
 div.right ul li {
   margin-top: 5px;
   margin-left: 0;
   padding: 0;
 }
+
 div.right .post ul {
   list-style: square;
   margin-left: 15px;
 }
+
 
 /**
  * Left column aka nav bar formatting
@@ -140,73 +159,90 @@ div.col-sm-3 {
   font-size: 14px;
   color: #666;
 }
+
 div.col-sm-3 strong {
   font-size: 16px;
   color: #4A4A4A;
   font-weight: normal;
 }
+
 div.col-sm-3 div#about {
   margin-top: 10px;
   color: #8C8C8C;
 }
+
 div.col-sm-3 img#about {
   -webkit-border-radius: 150px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .PageNavigation {
   font-size: 14px;
   display: block;
   width: auto;
   overflow: hidden;
 }
+
 .PageNavigation a {
   display: block;
   width: 50%;
   float: left;
   margin: 1em 0;
 }
+
 .PageNavigation .next {
   text-align: right;
 }
+
 .PageNavigation .prev {
   text-align: left;
 }
+
 .social {
   display: block;
   margin: 10px 0;
 }
+
 .social ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .social ul li {
   display: inline-block;
   margin: 0 5px;
 }
+
 .social li a {
   font-size: 16px;
 }
+
 .share-page {
   padding: 10px 10px 5px;
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
 }
+
 .post-content img, .content img {
   max-width: 100%
 }
+
 .posts li {
   padding: 10px 0;
 }
+
 #home, .post {
   min-height: 80vh;
 }
+
 .view-container {
   min-height: 90vh;
   padding-top: 40px;
 }
+
 
 /* Responsive Conditional */
 
@@ -216,11 +252,13 @@ div.col-sm-3 img#about {
     max-width: 18vw;
   }
 }
+
 @media (max-width: 768px) {
   div.col-sm-3 {
     margin-top: 30px;
   }
 }
+
 @media (min-width: 1400px) {
   .fixed-condition {
     max-width: 250px;
