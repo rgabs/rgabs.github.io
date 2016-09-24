@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why-When do I need $scope.$apply() in AngularJS
+title: "Why/When do I need $scope.$apply() in AngularJS"
 date: 2016-09-25T01:15:00.000Z
 categories: front-end
 ---
