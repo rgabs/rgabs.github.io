@@ -54,11 +54,13 @@ h3 {
 }
 
 a, a:link, a:active {
+  color: #8C8C8C;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #B3B3B3;
+  text-decoration: none;
 }
 
 
@@ -89,6 +91,10 @@ div.content {
   border-top: 1px solid #E6E6E6;
   margin-top: 5px;
   padding-top: 5px;
+}
+
+.content a, .content a:link, .content a:active, .content a:hover {
+  color: #428bca;
 }
 
 div.content pre {
