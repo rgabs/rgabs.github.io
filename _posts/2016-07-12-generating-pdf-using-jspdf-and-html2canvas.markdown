@@ -114,6 +114,9 @@ function startPrintProcess(canvasObj, fileName, callback) {
 
 #### That's all you need to print the perfect screenshot of your view(s) from the front-end.
 
+### Demo Fiddle:
+<iframe width="100%" height="300" src="//jsfiddle.net/rgabs/5qcsg1e9/1/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 We can use it further to save multiple views on a single PDF file by saving the state of the PDF object and mutating the object in each view(using `pdf.addHTML` and `pdf.addPage` methods).
 
 Please leave comments below if you want to share anything or give feedback.
