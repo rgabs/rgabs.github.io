@@ -62,7 +62,7 @@ function MyCtrl($scope, myService) {
     })
 }
 ```
-The expectation here is that the View will update the name to 'Bruce Wayne' but it will not because we not **directly** using the $http service.
+The expectation here is that the View will update the name to 'Bruce Wayne' but it will not because we are not **directly** using the $http service.
 
 The quick fix here would be calling $scope.$apply(); method just after updating the scope property in the controller. (Please be extra cautious here as there might be a digest cycle already running.)
 
