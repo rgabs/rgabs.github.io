@@ -1,7 +1,7 @@
 title: Rahul Gaba
-description: My share to the open-source community :)
+description: My contribution to the open-source community.
 author: Rahul Gaba
-github: https://github.com/rahulgaba16
+github: https://github.com/rgabs
 about: I am a JavaScript Developer. I have advanced level experience in Front-end technologies and NodeJS programming.
 disqus_shortname: rahulgaba
 google_analytics: UA-80358007-1
@@ -36,11 +36,11 @@ urls:
     - text: Projects and Experiments
       url: /projects/
     - text: Github
-      url: https://github.com/rahulgaba16
+      url: https://github.com/rgabs
     - text: XML Feed
       url: /feed.xml
 
-url: "https://rahulgaba16.github.io"
+url: "https://rgabs.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
