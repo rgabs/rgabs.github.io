@@ -33,4 +33,11 @@
   "url": "http://rahulgaba.com/front-end/2016/07/31/Showing-add-to-homescreen-banner-in-iPhone-Safari.html",
   "date": "Aug 2016",
   "tags": ["NPM", "Bower", "CSS", "HTML"]
+}, {
+  "slug": "expediaVR",
+  "name": "expediaVR",
+  "image": "expediavr.png",
+  "url": "http://tinyurl.com/expediavr",
+  "date": "Sept 2016",
+  "tags": ["Aframe", "Web-VR"]
 }]
