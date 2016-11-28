@@ -40,4 +40,11 @@
   "url": "http://tinyurl.com/expediavr",
   "date": "Sept 2016",
   "tags": ["Aframe", "Web-VR"]
+}, {
+  "slug": "Facet Directive",
+  "name": "Facet Directive",
+  "image": "facet.png",
+  "url": "http://rahulgaba.com/facet-directive/",
+  "date": "October 2016",
+  "tags": ["Bower", "AngularJS"]
 }]
