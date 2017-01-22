@@ -6,6 +6,27 @@
   "date": "July 2016",
   "tags": ["jQuery", "CSS", "HTML"]
 }, {
+  "slug": "iPhoneInstallOverlay",
+  "name": "iPhoneInstallOverlay Plugin",
+  "image": "iphoneoverlay.png",
+  "url": "http://rahulgaba.com/front-end/2016/07/31/Showing-add-to-homescreen-banner-in-iPhone-Safari.html",
+  "date": "Aug 2016",
+  "tags": ["NPM", "Bower", "CSS", "HTML"]
+}, {
+  "slug": "Simple socket based application using SailsJS and Google maps",
+  "name": "sails.socket.io, google maps",
+  "image": "sailsocket.png",
+  "url": "https://sailsocket.herokuapp.com",
+  "date": "December 2017",
+  "tags": ["AngularJS", "SailsJS", "Google Maps", "WebSockets"]
+}, {
+  "slug": "expediaVR",
+  "name": "expediaVR",
+  "image": "expediavr.png",
+  "url": "http://tinyurl.com/expediavr",
+  "date": "Sept 2016",
+  "tags": ["Aframe", "Web-VR"]
+}, {
   "slug": "Matrix Chart",
   "name": "Matrix Chart",
   "image": "matrix.png",
@@ -26,20 +47,6 @@
   "url": "https://rgabs.github.io/2016/01/06/es6-based-angular-directive-for.html",
   "date": "Jan 2016",
   "tags": ["AngularJS", "ES6", "CSS"]
-}, {
-  "slug": "iPhoneInstallOverlay",
-  "name": "iPhoneInstallOverlay Plugin",
-  "image": "iphoneoverlay.png",
-  "url": "http://rahulgaba.com/front-end/2016/07/31/Showing-add-to-homescreen-banner-in-iPhone-Safari.html",
-  "date": "Aug 2016",
-  "tags": ["NPM", "Bower", "CSS", "HTML"]
-}, {
-  "slug": "expediaVR",
-  "name": "expediaVR",
-  "image": "expediavr.png",
-  "url": "http://tinyurl.com/expediavr",
-  "date": "Sept 2016",
-  "tags": ["Aframe", "Web-VR"]
 }, {
   "slug": "Facet Directive",
   "name": "Facet Directive",
