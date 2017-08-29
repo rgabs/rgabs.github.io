@@ -67,7 +67,7 @@ We used Jest because of the following reasons:
 
 - `test`: It will go through all the test files and execute them. This command will also be used in pre-hooks and CI checks.
 - `test:watch`: This will watch all the test files. It is very useful while writing tests and quickly see the result.
-- `test:update`: This command will update snapshots for all the presentational components. If the snapshot is not there, it will create it for you. We will discuss snapshots in detail in coming chapters.
+- `test:update`: This command will update snapshots for all the presentational components. If the snapshot is not there, it will create it for you.
 - `coverage`: As the name suggests, this command will generate a coverage report.
 
 
@@ -125,9 +125,6 @@ Here is our jest config:
 - `transformIgnorePatterns`: We pass all the NPM modules here which needs to be transpiled. These modules are basically ES6/7 modules.
 
 _Note: Make sure to add `cache` and `coverage` in your gitignore file._
-
-The code till here can be found in the **branch** [chapter/7/7.1](https://github.com/master-atul/react-native-plus-plus-code/tree/chapter/7/7.1)
-
 
 
 ## Snapshots
