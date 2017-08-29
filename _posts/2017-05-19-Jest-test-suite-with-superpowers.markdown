@@ -5,7 +5,7 @@ date: 2017-05-19T01:15:00.000Z
 categories: react-native
 ---
 
-# Intro
+## Intro
 
 With the growing complexities of apps, unit testing is a mandate. Since we are writing code in JS, we can utilize most of the testing frameworks/libraries available out there for `react/web` apps without much changes.
 
@@ -53,6 +53,7 @@ We used Jest because of the following reasons:
 - Fast
 - Snapshot testing(Explained later)
 - Coverage out of box
+
 
 ### 4 important test scripts every project should have
 
@@ -204,7 +205,6 @@ Consider this scenario. You worked on a component, generated a snap and pushed i
 *We recommend creating an __npm script__ for updating snaps. As you can see in the package.json of our boiler plate,  it conatains a command called "test:update". This command go through all the test cases and will update the snap whenever it is required.*
 
 __More information can be found here:__ [https://facebook.github.io/jest/docs/en/snapshot-testing.html#content](https://facebook.github.io/jest/docs/en/snapshot-testing.html#content)
-
 
 
 ## Testing stateful components using Enzyme
