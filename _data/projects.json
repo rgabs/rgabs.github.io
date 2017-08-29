@@ -1,10 +1,24 @@
 [{
-  "slug": "Line/Range(Analysis) Chart",
-  "name": "Line/Range(Analysis) Chart",
-  "image": "linerangechart.png",
+  "slug": "react-native-modal-overlay",
+  "name": "react-native-modal-overlay",
+  "image": "overlay.png",
+  "url": "https://www.npmjs.com/package/react-native-modal-overlay",
+  "date": "March 2017",
+  "tags": ["react-native","NPM"]
+},{
+  "slug": "react-native-offline-status",
+  "name": "react-native-offline-status",
+  "image": "offlineStatus.png",
+  "url": "https://www.npmjs.com/package/react-native-offline-status",
+  "date": "June 2017",
+  "tags": ["NPM","react-native"]
+},{
+  "slug": "call-once-in-interval",
+  "name": "call-once-in-interval",
+  "image": "callOnce.png",
   "url": "https://rgabs.github.io/lineRangeChart/",
-  "date": "July 2016",
-  "tags": ["jQuery", "CSS", "HTML"]
+  "date": "April 2017",
+  "tags": ["NPM"]
 }, {
   "slug": "iPhoneInstallOverlay",
   "name": "iPhoneInstallOverlay Plugin",

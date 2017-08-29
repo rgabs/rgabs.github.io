@@ -2,7 +2,7 @@ title: Rahul Gaba
 description: My contribution to the open-source community.
 author: Rahul Gaba
 github: https://github.com/rgabs
-about: I am a JavaScript Developer. I have advanced level experience in Front-end technologies and NodeJS programming.
+about: I am a full stack developer who loves writing code for a living. I am passionate about JavaScript, VR, react-native, nodeJS and web development.
 disqus_shortname: rahulgaba
 google_analytics: UA-80358007-1
 
@@ -23,7 +23,7 @@ social:
       link: "https://twitter.com/rahulgaba16"
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/rahulgaba16"
-    - icon: fa-paperclip
+    - icon: fa-sticky-note
       link: "/CV-Rahul Gaba.pdf"
 
 share:
