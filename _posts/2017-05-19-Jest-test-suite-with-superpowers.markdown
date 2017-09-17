@@ -133,13 +133,22 @@ Here is our jest config:
 _Note: Make sure to add `cache` and `coverage` in your gitignore file._
 
 
-## Snapshots
+<div style="padding: 30px 0;overflow: hidden;">
+    <h2 id="snapshots" style="
+    float: left;
+    width: 70%;
+    padding-bottom: 27px;
+    margin: 0;
+">Snapshots</h2>
 
-<div style="text-align:center">
-  <img src="/static/img/jest/snap.gif" style="width: 20%;display:inline-block;text-align:'left'" vspace="20">
+  <img src="/static/img/jest/snap.gif" style="width: 30%;float: right;padding-left: 25px;"><p style="
+">
+
+</p>
+
+This features makes testing presentational components a lot easier. With a single line, you can test all your presentational components (their render method only). No need to write test cases for each component returned by render method.<p></p>
+
 </div>
-
-This features makes testing presentational components a lot easier. With a single line, you can test all your presentational components (their render method only). No need to write test cases for each component returned by render method.
 
 
 
