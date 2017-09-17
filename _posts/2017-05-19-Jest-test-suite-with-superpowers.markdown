@@ -13,6 +13,11 @@ With the growing complexities of apps, unit testing is a mandate. Since we are w
 
 ### What's the use of testing UI code?
 
+
+<div style="text-align:center">
+  <img src="/static/img/_posts/why.gif" style="width: 70%;display:inline-block;text-align:'left'" vspace="20">
+</div>
+
 We all have asked/been asked this question at least once. And agree or not, the term unit testing was not very popular amongst FE developers until recent years. Here are some of the reasons why we should write unit tests.
 
 - It lets you capture bugs before the QA team does:
@@ -130,7 +135,13 @@ _Note: Make sure to add `cache` and `coverage` in your gitignore file._
 
 ## Snapshots
 
+<div style="text-align:center">
+  <img src="/static/img/_posts/snap.gif" style="width: 20%;display:inline-block;text-align:'left'" vspace="20">
+</div>
+
 This features makes testing presentational components a lot easier. With a single line, you can test all your presentational components (their render method only). No need to write test cases for each component returned by render method.
+
+
 
 ### What are Snapshots:
 
