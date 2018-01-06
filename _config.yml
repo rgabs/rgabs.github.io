@@ -24,7 +24,8 @@ social:
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/rahulgaba16"
     - icon: fa-sticky-note
-      link: "/CV"
+      link: "/CV.pdf"
+      fileName: "CV-Rahul Gaba.pdf"
 
 share:
   twitter_username: rahulgaba16
