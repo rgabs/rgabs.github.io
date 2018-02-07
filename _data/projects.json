@@ -1,71 +1,177 @@
-[{
-  "slug": "react-native-modal-overlay",
-  "name": "react-native-modal-overlay",
-  "image": "overlay.png",
-  "url": "https://www.npmjs.com/package/react-native-modal-overlay",
-  "date": "March 2017",
-  "tags": ["react-native","NPM"]
-},{
-  "slug": "react-native-offline-status",
-  "name": "react-native-offline-status",
-  "image": "offlineStatus.png",
-  "url": "https://www.npmjs.com/package/react-native-offline-status",
-  "date": "June 2017",
-  "tags": ["NPM","react-native"]
-},{
-  "slug": "call-once-in-interval",
-  "name": "call-once-in-interval",
-  "image": "callOnce.png",
-  "url": "https://rgabs.github.io/lineRangeChart/",
-  "date": "April 2017",
-  "tags": ["NPM"]
-}, {
-  "slug": "iPhoneInstallOverlay",
-  "name": "iPhoneInstallOverlay Plugin",
-  "image": "iphoneoverlay.png",
-  "url": "http://rahulgaba.com/front-end/2016/07/31/Showing-add-to-homescreen-banner-in-iPhone-Safari.html",
-  "date": "Aug 2016",
-  "tags": ["NPM", "Bower", "CSS", "HTML"]
-}, {
-  "slug": "Simple socket based application using SailsJS and Google maps",
-  "name": "sails.socket.io, google maps",
-  "image": "sailsocket.png",
-  "url": "https://sailsocket.herokuapp.com",
-  "date": "December 2017",
-  "tags": ["AngularJS", "SailsJS", "Google Maps", "WebSockets"]
-}, {
-  "slug": "expediaVR",
-  "name": "expediaVR",
-  "image": "expediavr.png",
-  "url": "https://github.com/master-atul/VRDemo",
-  "date": "Sept 2016",
-  "tags": ["VR"]
-}, {
-  "slug": "Matrix Chart",
-  "name": "Matrix Chart",
-  "image": "matrix.png",
-  "url": "http://rgabs.github.io/matrixChart/",
-  "date": "Jan 2016",
-  "tags": ["jQuery", "CSS", "HTML"]
-}, {
-  "slug": "Searchable Select Dropdown",
-  "name": "Searchable Select Dropdown",
-  "image": "dropdown.png",
-  "url": "https://rgabs.github.io/searchable-select-dropdown/",
-  "date": "June 2016",
-  "tags": ["VueJS", "NPM"]
-}, {
-  "slug": "noUISlider Directive",
-  "name": "noUISlider Directive",
-  "image": "nouislider.png",
-  "url": "https://rgabs.github.io/2016/01/06/es6-based-angular-directive-for.html",
-  "date": "Jan 2016",
-  "tags": ["AngularJS", "CSS"]
-}, {
-  "slug": "Facet Directive",
-  "name": "Facet Directive",
-  "image": "facet.png",
-  "url": "http://rahulgaba.com/facet-directive/",
-  "date": "October 2016",
-  "tags": ["Bower", "AngularJS"]
-}]
+[
+  {
+    "slug": "tic-tac-toe",
+    "name": "tic-tac-toe",
+    "image": "tic-tac-toe.png",
+    "url": "http://rahulgaba.com/tic-tac-toe/",
+    "date": "Dec 2017",
+    "tags": [
+      "ReactJS"
+    ]
+  },
+  {
+    "slug": "twitter-clone",
+    "name": "twitter-clone",
+    "image": "twitter-clone.png",
+    "url": "http://rahulgaba.com/twitter-clone/",
+    "date": "Oct 2016",
+    "tags": [
+      "ReactJS",
+      "CSS"
+    ]
+  },
+  {
+    "slug": "note-taker",
+    "name": "note-taker",
+    "image": "note-taker.png",
+    "url": "https://snack.expo.io/@rgabs/note-taker",
+    "date": "Feb 2018",
+    "tags": [
+      "ReactJS"
+    ]
+  },
+  {
+    "slug": "react-made-native-easy",
+    "name": "react-made-native-easy",
+    "image": "react-made-native-easy.png",
+    "url": "http://reactnative.guide/",
+    "date": "Dec 2017",
+    "tags": [
+      "react-native",
+      "redux"
+    ]
+  },
+  {
+    "slug": "sf-muni-visualization",
+    "name": "sf-muni",
+    "image": "sf-muni.png",
+    "url": "http://sf-muni-d3.herokuapp.com",
+    "date": "Dec 2017",
+    "tags": [
+      "react-native"
+    ]
+  },
+  {
+    "slug": "replaceArrayIndex",
+    "name": "replaceArrayIndex",
+    "image": "replaceArrayIndex.png",
+    "url": "https://www.npmjs.com/package/replace-array-index",
+    "date": "Nov 2017",
+    "tags": [
+      "NPM"
+    ]
+  },
+  {
+    "slug": "redux-prevent-repeat-dispatch",
+    "name": "redux-prevent-repeat-dispatch",
+    "image": "redux-prevent-repeat-dispatch.png",
+    "url": "https://www.npmjs.com/package/redux-prevent-repeat-dispatch",
+    "date": "April 2017",
+    "tags": [
+      "redux",
+      "NPM"
+    ]
+  },
+  {
+    "slug": "react-native-offline-status",
+    "name": "react-native-offline-status",
+    "image": "offlineStatus.png",
+    "url": "https://www.npmjs.com/package/react-native-offline-status",
+    "date": "June 2017",
+    "tags": [
+      "NPM",
+      "react-native"
+    ]
+  },
+  {
+    "slug": "call-once-in-interval",
+    "name": "call-once-in-interval",
+    "image": "callOnce.png",
+    "url": "https://rgabs.github.io/lineRangeChart/",
+    "date": "April 2017",
+    "tags": [
+      "NPM"
+    ]
+  },
+  {
+    "slug": "iPhoneInstallOverlay",
+    "name": "iPhoneInstallOverlay Plugin",
+    "image": "iphoneoverlay.png",
+    "url": "http://rahulgaba.com/front-end/2016/07/31/Showing-add-to-homescreen-banner-in-iPhone-Safari.html",
+    "date": "Aug 2016",
+    "tags": [
+      "NPM",
+      "Bower",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "slug": "Simple socket based application using SailsJS and Google maps",
+    "name": "sails.socket.io, google maps",
+    "image": "sailsocket.png",
+    "url": "https://sailsocket.herokuapp.com",
+    "date": "December 2017",
+    "tags": [
+      "AngularJS",
+      "SailsJS",
+      "Google Maps",
+      "WebSockets"
+    ]
+  },
+  {
+    "slug": "expediaVR",
+    "name": "expediaVR",
+    "image": "expediavr.png",
+    "url": "https://github.com/master-atul/VRDemo",
+    "date": "Sept 2016",
+    "tags": [
+      "VR"
+    ]
+  },
+  {
+    "slug": "Matrix Chart",
+    "name": "Matrix Chart",
+    "image": "matrix.png",
+    "url": "http://rgabs.github.io/matrixChart/",
+    "date": "Jan 2016",
+    "tags": [
+      "jQuery",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "slug": "Searchable Select Dropdown",
+    "name": "Searchable Select Dropdown",
+    "image": "dropdown.png",
+    "url": "https://rgabs.github.io/searchable-select-dropdown/",
+    "date": "June 2016",
+    "tags": [
+      "VueJS",
+      "NPM"
+    ]
+  },
+  {
+    "slug": "noUISlider Directive",
+    "name": "noUISlider Directive",
+    "image": "nouislider.png",
+    "url": "https://rgabs.github.io/2016/01/06/es6-based-angular-directive-for.html",
+    "date": "Jan 2016",
+    "tags": [
+      "AngularJS",
+      "CSS"
+    ]
+  },
+  {
+    "slug": "Facet Directive",
+    "name": "Facet Directive",
+    "image": "facet.png",
+    "url": "http://rahulgaba.com/facet-directive/",
+    "date": "October 2016",
+    "tags": [
+      "Bower",
+      "AngularJS"
+    ]
+  }
+]
