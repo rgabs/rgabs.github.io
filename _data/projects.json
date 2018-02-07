@@ -1,5 +1,27 @@
 [
   {
+    "slug": "react-made-native-easy",
+    "name": "react-made-native-easy",
+    "image": "react-made-native-easy.png",
+    "url": "http://reactnative.guide/",
+    "date": "Dec 2017",
+    "tags": [
+      "react-native",
+      "redux"
+    ]
+  },
+  {
+    "slug": "note-taker",
+    "name": "note-taker",
+    "image": "note-taker.png",
+    "url": "https://snack.expo.io/@rgabs/note-taker",
+    "date": "Feb 2018",
+    "tags": [
+      "react-native",
+      "redux"
+    ]
+  },
+  {
     "slug": "tic-tac-toe",
     "name": "tic-tac-toe",
     "image": "tic-tac-toe.png",
@@ -21,28 +43,6 @@
     ]
   },
   {
-    "slug": "note-taker",
-    "name": "note-taker",
-    "image": "note-taker.png",
-    "url": "https://snack.expo.io/@rgabs/note-taker",
-    "date": "Feb 2018",
-    "tags": [
-      "react-native",
-      "redux"
-    ]
-  },
-  {
-    "slug": "react-made-native-easy",
-    "name": "react-made-native-easy",
-    "image": "react-made-native-easy.png",
-    "url": "http://reactnative.guide/",
-    "date": "Dec 2017",
-    "tags": [
-      "react-native",
-      "redux"
-    ]
-  },
-  {
     "slug": "sf-muni-visualization",
     "name": "sf-muni",
     "image": "sf-muni.png",
@@ -53,24 +53,13 @@
     ]
   },
   {
-    "slug": "replaceArrayIndex",
-    "name": "replaceArrayIndex",
-    "image": "replaceArrayIndex.png",
-    "url": "https://www.npmjs.com/package/replace-array-index",
-    "date": "Nov 2017",
+    "slug": "expediaVR",
+    "name": "expediaVR",
+    "image": "expediavr.png",
+    "url": "https://travelvr.herokuapp.com/",
+    "date": "Sept 2016",
     "tags": [
-      "NPM"
-    ]
-  },
-  {
-    "slug": "redux-prevent-repeat-dispatch",
-    "name": "redux-prevent-repeat-dispatch",
-    "image": "redux-prevent-repeat-dispatch.png",
-    "url": "https://www.npmjs.com/package/redux-prevent-repeat-dispatch",
-    "date": "April 2017",
-    "tags": [
-      "redux",
-      "NPM"
+      "VR"
     ]
   },
   {
@@ -121,13 +110,24 @@
     ]
   },
   {
-    "slug": "expediaVR",
-    "name": "expediaVR",
-    "image": "expediavr.png",
-    "url": "https://github.com/master-atul/VRDemo",
-    "date": "Sept 2016",
+    "slug": "replaceArrayIndex",
+    "name": "replaceArrayIndex",
+    "image": "replaceArrayIndex.png",
+    "url": "https://www.npmjs.com/package/replace-array-index",
+    "date": "Nov 2017",
     "tags": [
-      "VR"
+      "NPM"
+    ]
+  },
+  {
+    "slug": "redux-prevent-repeat-dispatch",
+    "name": "redux-prevent-repeat-dispatch",
+    "image": "redux-prevent-repeat-dispatch.png",
+    "url": "https://www.npmjs.com/package/redux-prevent-repeat-dispatch",
+    "date": "April 2017",
+    "tags": [
+      "redux",
+      "NPM"
     ]
   },
   {
