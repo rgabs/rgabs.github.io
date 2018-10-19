@@ -42,22 +42,22 @@ We will be using [file mock](https://jestjs.io/docs/en/manual-mocks#mocking-node
 ```
 
 2. Add the following code in the newly created mock file.
-```js
-// This mock will make sure that we are able to access mapStateToProps, mapDispatchToProps and reactComponent in the test file.
+    ```js
+    // This mock will make sure that we are able to access mapStateToProps, mapDispatchToProps and reactComponent in the test file.
 
-// To use this, just do `jest.mock('react-redux');` in your container.test.js file.
-const mockDispatch = jest.fn((action) => action);
+    // To use this, just do `jest.mock('react-redux');` in your container.test.js file.
+    const mockDispatch = jest.fn((action) => action);
 
-module.exports = {
-  connect: (mapStateToProps, mapDispatchToProps) => (reactComponent) => ({
-    mapStateToProps,
-    mapDispatchToProps: (dispatch = mockDispatch, ownProps) => mapDispatchToProps(dispatch, ownProps),
-    reactComponent,
-    mockDispatch
-  }),
-  Provider: ({children}) => children
-};
-```
+    module.exports = {
+    connect: (mapStateToProps, mapDispatchToProps) => (reactComponent) => ({
+        mapStateToProps,
+        mapDispatchToProps: (dispatch = mockDispatch, ownProps) => mapDispatchToProps(dispatch, ownProps),
+        reactComponent,
+        mockDispatch
+    }),
+    Provider: ({children}) => children
+    };
+    ```
 
 3. In your test file, tell jest to use mocked version of react-redux instead of using the one from the node_modules. To do this, just add the following lines after your imports:
 
