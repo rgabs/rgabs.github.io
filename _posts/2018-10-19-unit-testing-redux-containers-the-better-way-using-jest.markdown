@@ -5,10 +5,6 @@ date: 2018-10-19T01:15:00.000Z
 categories: front-end
 ---
 
-<div style="text-align:center">
-  <img src="/static/img/test.gif" style="width: 70%;display:inline-block;text-align:'left'" vspace="20">
-</div>
-
 ## The problem
 Testing react components are very easy nowadays, thanks to libraries like jest, enzyme, etc. But testing container components which use redux can be a real pain sometimes and the reason for that is the so called **connect** ([higher order component](https://reactjs.org/docs/higher-order-components.html) from redux).
 
@@ -85,15 +81,14 @@ We will be using [file mock](https://jestjs.io/docs/en/manual-mocks#mocking-node
 
     ```js
     import App from './App'
-    /*
-        App.mapStateToProps() // the mapDispatchToProps function
+    
+    App.mapStateToProps() // the mapStateToProps function
 
-        App.mapDispatchToProps() // the mapDispatchToProps
+    App.mapDispatchToProps() // the mapDispatchToProps function
 
-        <App.reactComponent /> // the react component which is being passed to connect
-        
-        App.mockDispatch // a jest function, can be used to test if dispatch is being called with the right action in mapDispatchToProps
-    */
+    <App.reactComponent /> // the react component which is being passed to connect
+    
+    App.mockDispatch // a jest function, can be used to test if dispatch is being called with the right action in mapDispatchToProps
     
     ``` 
 
@@ -142,7 +137,7 @@ CHEERS!!
   <img src="/static/img/cheers.gif" style="width: 70%;display:inline-block;text-align:'left'" vspace="20">
 </div>
 
-Also don't forget to like/share/comment on the blog if you like the blog. 
+Don't forget to clap if you like the blog. 
 
 ## References
 1. https://gist.github.com/rgabs/1afa3f0058baf0d491a24d096f6085c7
