@@ -43,7 +43,7 @@ Presenting you the react-redux mock, which lets you access all the three functio
 
 <script src="https://gist.github.com/rgabs/1afa3f0058baf0d491a24d096f6085c7.js"></script>
 
-### Setting up mock:
+## Setting up mock:
 We will be using [file mock](https://jestjs.io/docs/en/manual-mocks#mocking-node-modules) from jest to mock react-redux library.
 
 1. Create __mocks__ folder at the same level as node_modules and add a file called react-redux.js.

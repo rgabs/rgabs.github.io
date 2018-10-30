@@ -253,6 +253,10 @@ div.col-sm-3 img#about {
   background-color: #f0f0f0;
 }
 
+.highlighter-rouge {
+  margin: 10px 0 15px;
+}
+
 /* Responsive Conditional */
 
 @media (min-width: 1024px) {
