@@ -249,6 +249,9 @@ div.col-sm-3 img#about {
   padding-top: 40px;
 }
 
+.gist .blob-wrapper table {
+  background-color: #f0f0f0;
+}
 
 /* Responsive Conditional */
 

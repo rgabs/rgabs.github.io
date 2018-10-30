@@ -6,6 +6,7 @@ categories: front-end
 ---
 
 ## The problem
+
 Testing react components are very easy nowadays, thanks to libraries like jest, enzyme, etc. But testing container components which use redux can be a real pain sometimes and the reason for that is the so called **connect** ([higher order component](https://reactjs.org/docs/higher-order-components.html) from redux).
 
 A usual react container component exports something like this:
@@ -46,14 +47,14 @@ Presenting you the react-redux mock, which lets you access all the three functio
 We will be using [file mock](https://jestjs.io/docs/en/manual-mocks#mocking-node-modules) from jest to mock react-redux library.
 
 1. Create __mocks__ folder at the same level as node_modules and add a file called react-redux.js.
-```
-    .
-    ├── config
-    ├── __mocks__
-    │   └── react-redux.js
-    ├── node_modules
-    └── src
-```
+    ```
+        .
+        ├── config
+        ├── __mocks__
+        │   └── react-redux.js
+        ├── node_modules
+        └── src
+    ```
 
 2. Add the following code in the newly created mock file.
     ```js
@@ -127,17 +128,17 @@ In case of redux containers, all we need to test is:
 
     Usually a container component file contains a react component which is passing down props to its children and/or rendering children based on the props. This component reads the props from mapStateToProps and mapDispatchToProps and uses them to render the UI. Here we need to test whateve logic/UI the component has. It should be tested like any other react component using jest/enzyme etc.
 
-    While testing the component. we should **not** be worried if the props are being passed from mapStateToProps or mapDispatchToProps(that's the job of connect and its already tested :)).
+    While testing the component. we should **not** be worried if the props are being passed from mapStateToProps or mapDispatchToProps(that's the job of connect and its already tested).
 
-Now go ahead and enjoying writing tests without worrying about boilerplate code in redux containers :)
+Now go ahead and enjoying writing tests without worrying about boilerplate code in redux containers  😎 
 
-CHEERS!!
+CHEERS !!
 
 <div style="text-align:center">
   <img src="/static/img/cheers.gif" style="width: 70%;display:inline-block;text-align:'left'" vspace="20">
 </div>
 
-Don't forget to clap if you like the blog. 
+Don't forget to recommend if you like the blog. 
 
 ## References
 1. https://gist.github.com/rgabs/1afa3f0058baf0d491a24d096f6085c7
