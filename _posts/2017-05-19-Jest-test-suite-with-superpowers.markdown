@@ -2,6 +2,7 @@
 layout: post
 title: "Jest: Test suite with superpowers 😎"
 date: 2017-05-19T01:15:00.000Z
+intro: "With the growing complexities of apps, unit testing is a mandate. Since we are writing code in JS, we can utilize most of the testing frameworks/libraries available out there for `react/web` apps without much changes. This blog will help you get started with jest, understanding snapshots, understanding enzyme for testing component with state."
 categories: react-native
 ---
 

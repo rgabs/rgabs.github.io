@@ -240,6 +240,11 @@ div.col-sm-3 img#about {
   padding: 10px 0;
 }
 
+.posts li a {
+  font-weight: 500;
+  font-size: 18px;
+}
+
 #home, .post {
   min-height: 80vh;
 }

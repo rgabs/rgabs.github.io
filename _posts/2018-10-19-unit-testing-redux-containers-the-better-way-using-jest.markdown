@@ -2,18 +2,19 @@
 layout: post
 title: "Unit testing redux containers the better way using jest"
 date: 2018-10-19T01:15:00.000Z
+intro: "Testing container components which use redux can be a real pain sometimes and the reason for that is the connect from redux. This blog will help you test container components just like you test any other react component."
 categories: front-end
 ---
 
 ## The problem
 
-Testing react components are very easy nowadays, thanks to libraries like jest, enzyme, etc. But testing container components which use redux can be a real pain sometimes and the reason for that is the so called **connect** ([higher order component](https://reactjs.org/docs/higher-order-components.html) from redux).
+Testing react components are very easy nowadays, thanks to libraries like jest, enzyme, etc. But testing container components which use redux can be a real pain sometimes and the reason for that is the so called **connect** ([higher order component](https://reactjs.org/docs/higher-order-components.html) from redux). This blog will help you test container components just like you test any other react component.
 
 A usual react container component exports something like this:
 
 `export default connect(mapStateToProps, mapDispatchToProps)(App)`
 
-Since we are exporting a [higher order component](https://reactjs.org/docs/higher-order-components.html), it makes testing the component more complicated than it has to be. 
+Since we are exporting a [higher order component](https://reactjs.org/docs/higher-order-components.html), it makes testing the component more complicated than it has to be.
 
 
 ## Existing solutions
@@ -28,7 +29,7 @@ There are a couple of methods which I found online regarding testing redux conta
 
     https://medium.com/@linmic/writing-tests-for-react-redux-containers-5d01083ecfc4
 
-2. **Exporting mapStateToProps, mapDispatchToProps and the component** 
+2. **Exporting mapStateToProps, mapDispatchToProps and the component**
 
     While this methods has very less boilerplate code and it allows us to properly test each function, it kind of a hack since we are exporting a function just to make is testable which is a code smell. We should export a part of our code only if it is being used somewhere else, not to test it.
 
@@ -78,20 +79,20 @@ We will be using [file mock](https://jestjs.io/docs/en/manual-mocks#mocking-node
 
     `jest.mock('react-redux');`
 
-4. You should now be able to access mapStateToProps, mapDispatchToProps and reactComponent in the test file. 
+4. You should now be able to access mapStateToProps, mapDispatchToProps and reactComponent in the test file.
 
     ```js
     import App from './App'
-    
+
     App.mapStateToProps() // the mapStateToProps function
 
     App.mapDispatchToProps() // the mapDispatchToProps function
 
     <App.reactComponent /> // the react component which is being passed to connect
-    
+
     App.mockDispatch // a jest function, can be used to test if dispatch is being called with the right action in mapDispatchToProps
-    
-    ``` 
+
+    ```
 
     The app component just exports the connected component as a default export. Nothing changes there. Example:
 
@@ -109,7 +110,7 @@ URL for test case file: [ReposContainer.test.js](https://github.com/rgabs/github
 
 
 ## Bonus Topic: What we should/shouldn't test
-I strongly believe that we should test only the code that we write, not the library/framework we use. We can always assume that the external dependecies are already tested and mock them to test only the part we added. 
+I strongly believe that we should test only the code that we write, not the library/framework we use. We can always assume that the external dependecies are already tested and mock them to test only the part we added.
 
 In case of redux containers, all we need to test is:
 1. **mapStateToProps**
@@ -120,17 +121,17 @@ In case of redux containers, all we need to test is:
 
 2. **mapDispatchToProps**
 
-    Which handles dispatching actions so that they can be consumed by the reducers. It is also a pure function which gets dispatch as an argument and calls it with the action object. Here all we need to test is if dispatch is being called with the right action. 
+    Which handles dispatching actions so that they can be consumed by the reducers. It is also a pure function which gets dispatch as an argument and calls it with the action object. Here all we need to test is if dispatch is being called with the right action.
 
     While testing this, we should **not** be worried if click a button on a component dispatches action or dispatching an action changes the store state or not(again. that's the job of react-redux library)
 
-3. **React component** 
+3. **React component**
 
     Usually a container component file contains a react component which is passing down props to its children and/or rendering children based on the props. This component reads the props from mapStateToProps and mapDispatchToProps and uses them to render the UI. Here we need to test whateve logic/UI the component has. It should be tested like any other react component using jest/enzyme etc.
 
     While testing the component. we should **not** be worried if the props are being passed from mapStateToProps or mapDispatchToProps(that's the job of connect and its already tested).
 
-Now go ahead and enjoying writing tests without worrying about boilerplate code in redux containers  😎 
+Now go ahead and enjoying writing tests without worrying about boilerplate code in redux containers  😎
 
 CHEERS !!
 
@@ -138,10 +139,10 @@ CHEERS !!
   <img src="/static/img/cheers.gif" style="width: 70%;display:inline-block;text-align:'left'" vspace="20">
 </div>
 
-Don't forget to recommend if you like the blog. 
+Don't forget to recommend if you like the blog.
 
 ## References
 1. https://gist.github.com/rgabs/1afa3f0058baf0d491a24d096f6085c7
-2. https://medium.com/@visualskyrim/test-your-redux-container-with-enzyme-a0e10c0574ec 
+2. https://medium.com/@visualskyrim/test-your-redux-container-with-enzyme-a0e10c0574ec
 3. https://jestjs.io/docs/en/manual-mocks#mocking-node-modules
 4. https://www.imdb.com/title/tt0386676/

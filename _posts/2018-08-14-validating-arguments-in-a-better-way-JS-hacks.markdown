@@ -2,6 +2,7 @@
 layout: post
 title: "Validating arguments in a better way: JS hacks 😉"
 date: 2018-08-14T01:15:00.000Z
+intro: "Since JS is not a strongly typed language, writing checks/if-else-conditions for each argument can/will get messier in the long run. And no smart developer would want to have multiple if-else blocks just to validate arguments. Presenting you the new cooler/better way using ES6 default parameters."
 categories: front-end
 ---
 

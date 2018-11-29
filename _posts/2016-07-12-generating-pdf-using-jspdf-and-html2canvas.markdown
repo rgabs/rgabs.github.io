@@ -2,6 +2,7 @@
 layout: post
 title:  "A complete guide to generate PDF via just the front-end"
 date:  2016-07-14 00:34:00
+intro: "As a front end developer, we all come across a problem statement where the client wants to get the screenshot of front-end views in a single PDF. Though we can print PDF by triggering browser's default print button functionality(similar to Ctrl+P) but that approach has some limitations. Here is an alternate/better approach."
 categories: front-end
 ---
 

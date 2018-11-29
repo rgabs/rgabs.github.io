@@ -2,6 +2,7 @@
 layout: post
 title:  "Using iPhoneInstallOverlay plugin in your progressive web-app to show add to home screen banner in iPhone Safari"
 date:  2016-07-31 00:34:00
+intro: "A JavaScript plugin which shows a message to install the web application on iPhone devices(on Safari browser). This will be useful if you are building a progressive web application. If you don't know what progressive web applications are, head over to Progressive web apps blog by Google here: https://developers.google.com/web/progressive-web-apps/"
 categories: front-end
 ---
 

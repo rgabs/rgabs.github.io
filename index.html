@@ -7,7 +7,11 @@ layout: default
     <hr />
     <ol class="posts">
     {% for post in paginator.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+      <li>
+        <p><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></p>
+        <p class="intro">{{post.intro}}</p>
+      </li>
+
     {% endfor %}
     </ol>
 

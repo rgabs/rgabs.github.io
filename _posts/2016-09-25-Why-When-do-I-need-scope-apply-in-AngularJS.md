@@ -2,6 +2,7 @@
 layout: post
 title: "Why/When do I need $scope.$apply() in AngularJS"
 date: 2016-09-25T01:15:00.000Z
+intro: "When we start building complex/production applications in AngularJS we all have come across this scenario where we require to manually trigger the Angular Digest Cycle using $scope.$apply(). In this blog, I will be sharing my learnings."
 categories: front-end
 ---
 
