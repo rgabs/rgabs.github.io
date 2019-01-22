@@ -242,12 +242,22 @@ Enzyme is a JavaScript Testing utility for React. You will mostly be using shall
 
 ### Integrating Enzyme in your current Jest Framework
 
-The default react-native boilerplate comes with Jest. Integrating enzyme with Jest is just a two step process.
+The default react-native boilerplate comes with Jest. Integrating enzyme with Jest is just a three step process.
 
-- Install enzyme and jest-enzyme `yarn add enzyme jest-enzyme --dev`
+- Install enzyme and jest-enzyme `yarn add enzyme jest-enzyme enzyme-adapter-react-16 --dev`
 
-- Add one line in package.json inside jest config:
+- Add one line in package.json inside jest config: (you can ignore this step if you are using Create react app) 
     `"setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",`
+
+- Add the enzyme Adaptor by creating a file named `src/setupTests.js` and paste the following:
+    ```
+    import Enzyme from 'enzyme';
+    import Adapter from 'enzyme-adapter-react-16';
+
+    Enzyme.configure({ adapter: new Adapter() });
+    ```
+
+__Note__: If you are using create react app, ignore step 2 and 
 
 Thats it. You can start using Enzyme utilities now.
 
