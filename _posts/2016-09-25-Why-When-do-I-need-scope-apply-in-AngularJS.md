@@ -69,7 +69,7 @@ The quick fix here would be calling $scope.$apply(); method just after updating 
 
 ## Fiddle
 
-<script async src="//jsfiddle.net/rgabs/xLc4tnrf/embed/js,html,css,result/dark/"></script>
+<script async src="//jsfiddle.net/rgabs/xLc4tnrf/embed/js,html,result/dark/"></script>
 
 # Important things to take care when using $scope.$apply()
 
