@@ -16,7 +16,7 @@ AngularJS uses a clever trick of re-rendering the entire view if any of the scop
 
 # Example
 
-I've created a [fiddle](http://jsfiddle.net/rgabs/paxf1Lmn/3/) for this example comparing `$http` service by angular with the new ES6 native Promise API.
+I've created a [fiddle](http://jsfiddle.net/rgabs/xLc4tnrf/) for this example comparing `$http` service by angular with the new ES6 native Promise API.
 
 Code Explanation:
 
@@ -66,6 +66,10 @@ function MyCtrl($scope, myService) {
 The expectation here is that the View will update the name to 'Bruce Wayne' but it will not because we are not **directly** using the $http service.
 
 The quick fix here would be calling $scope.$apply(); method just after updating the scope property in the controller. (Please be extra cautious here as there might be a digest cycle already running.)
+
+## Fiddle
+
+<script async src="//jsfiddle.net/rgabs/xLc4tnrf/embed/js,html,css,result/dark/"></script>
 
 # Important things to take care when using $scope.$apply()
 
